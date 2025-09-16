@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<header>
+    <img src="./imagenes/logo.png" alt="" id="logito">
+    <h3>Centro de Teleinformatica y Produccion Industrial-CTPI</h3>
+</header>
+
+<body>
+
+
+<div class="map-container">
+    <img src="mapa.jpeg" alt="Mapa" class="imagen">
+    
+    <i id="1" class="fa-solid fa-location-dot marker" style="top: 33.7%; left: 39.9%;"></i>
+    <i id="2" class="fa-solid fa-location-dot marker" style="top: 34.2%; left: 38.8%;"></i>
+    <i id="3" class="fa-solid fa-location-dot marker" style="top: 35.5%; left: 38.2%;"></i>
+    <i id="4" class="fa-solid fa-location-dot marker" style="top: 36%; left: 37%;"></i>
+    <i id="5" class="fa-solid fa-location-dot marker" style="top: 36%; left: 33.5%;"></i>
+    <i id="6" class="fa-solid fa-location-dot marker" style="top: 38%; left: 30%;"></i>
+    <i id="7" class="fa-solid fa-location-dot marker" style="top: 40%; left: 32%;"></i>
+    <i id="8" class="fa-solid fa-location-dot marker" style="top: 39%; left: 28%;"></i>
+    <i id="9" class="fa-solid fa-location-dot marker" style="top: 38%; left: 27%;"></i>
+    <i id="10" class="fa-solid fa-location-dot marker" style="top: 41%; left: 27.5%;"></i>
+    <i id="11" class="fa-solid fa-location-dot marker" style="top: 41%; left: 26.2%;"></i>
+    <i id="12" class="fa-solid fa-location-dot marker" style="top: 42.3%; left: 26.8%;"></i>
+    <i id="13" class="fa-solid fa-location-dot marker" style="top: 41.6%; left: 25%;"></i>
+    <i id="14" class="fa-solid fa-location-dot marker" style="top: 42.6%; left: 25.8%;"></i>
+    <i id="15" class="fa-solid fa-location-dot marker" style="top: 45%; left: 26.3%;"></i>
+    <i id="16" class="fa-solid fa-location-dot marker" style="top: 45%; left: 23%;"></i>
+    <i id="17" class="fa-solid fa-location-dot marker" style="top: 43.7%; left: 25%;"></i>
+    <i id="18" class="fa-solid fa-location-dot marker" style="top: 42.3%; left: 24%;"></i>
+    <i id="19" class="fa-solid fa-location-dot marker" style="top: 42%; left: 22%;"></i>
+    <i id="20" class="fa-solid fa-location-dot marker" style="top: 47%; left: 25%;"></i>
+    <i id="21" class="fa-solid fa-location-dot marker" style="top: 47.5%; left: 23.5%;"></i>
+    <i id="22" class="fa-solid fa-location-dot marker" style="top: 48.5%; left: 22.8%;"></i>
+    <i id="23" class="fa-solid fa-location-dot marker" style="top: 49%; left: 21.8%;"></i>
+    <i id="24" class="fa-solid fa-location-dot marker" style="top: 47.5%; left: 20.6%;"></i>
+    <i id="25" class="fa-solid fa-location-dot marker" style="top: 46%; left: 20%;"></i>
+    <i id="26" class="fa-solid fa-location-dot marker" style="top: 45%; left: 15.5%;"></i>
+    <i id="27" class="fa-solid fa-location-dot marker" style="top: 49.6%; left: 19%;"></i>
+    <i id="28" class="fa-solid fa-location-dot marker" style="top: 51%; left: 20%;"></i>
+    <i id="29" class="fa-solid fa-location-dot marker" style="top: 52%; left: 21%;"></i>
+    <i id="30" class="fa-solid fa-location-dot marker" style="top: 54.2%; left: 22.5%;"></i>
+    <i id="31" class="fa-solid fa-location-dot marker" style="top: 57%; left: 23%;"></i>
+    <i id="32" class="fa-solid fa-location-dot marker" style="top: 59%; left: 26%;"></i>
+    <i id="33" class="fa-solid fa-location-dot marker" style="top: 62.8%; left: 28%;"></i>
+    <i id="34" class="fa-solid fa-location-dot marker" style="top: 53.7%; left: 28.5%;"></i>
+    <i id="35" class="fa-solid fa-location-dot marker" style="top: 52%; left: 28%;"></i>
+    <i id="36" class="fa-solid fa-location-dot marker" style="top: 50.5%; left: 26.7%;"></i>
+    <i id="37" class="fa-solid fa-location-dot marker" style="top: 49%; left: 26%;"></i>
+    <i id="38" class="fa-solid fa-location-dot marker" style="top: 51.6%; left: 30.7%;"></i>
+    <i id="39" class="fa-solid fa-location-dot marker" style="top: 51%; left: 29.8%;"></i>
+    <i id="40" class="fa-solid fa-location-dot marker" style="top: 49.6%; left: 29%;"></i>
+    <i id="41" class="fa-solid fa-location-dot marker" style="top: 48.7%; left: 28%;"></i>
+    <i id="42" class="fa-solid fa-location-dot marker" style="top: 47%; left: 27.6%;"></i>
+    <i id="43" class="fa-solid fa-location-dot marker" style="top: 51.5%; left: 36%;"></i>
+    <i id="44" class="fa-solid fa-location-dot marker" style="top: 56.5%; left: 35.5%;"></i>
+    <i id="45" class="fa-solid fa-location-dot marker" style="top: 46.6%; left: 40%;"></i>
+    <i id="46" class="fa-solid fa-location-dot marker" style="top: 53%; left: 42%;"></i>
+    <i id="47" class="fa-solid fa-location-dot marker" style="top: 44%; left: 43%;"></i>
+    <i id="48" class="fa-solid fa-location-dot marker" style="top: 40.8%; left: 43.4%;"></i>
+    <i id="49" class="fa-solid fa-location-dot marker" style="top: 44%; left: 49.7%;"></i>
+    <i id="50" class="fa-solid fa-location-dot marker" style="top: 56%; left: 41.4%;"></i>
+    <i id="51" class="fa-solid fa-location-dot marker" style="top: 56.8%; left: 42%;"></i>
+    <i id="52" class="fa-solid fa-location-dot marker" style="top: 58.6%; left: 41.2%;"></i>
+    <i id="53" class="fa-solid fa-location-dot marker" style="top: 59.5%; left: 46%;"></i>
+    <i id="54" class="fa-solid fa-location-dot marker" style="top: 55.8%; left: 47%;"></i>
+    <i id="55" class="fa-solid fa-location-dot marker" style="top: 56%; left: 45.5%;"></i>
+    <i id="56" class="fa-solid fa-location-dot marker" style="top: 62.3%; left: 43.5%;"></i>
+    <i id="57" class="fa-solid fa-location-dot marker" style="top: 67.8%; left: 42%;"></i>
+    <i id="58" class="fa-solid fa-location-dot marker" style="top: 67.7%; left: 33.5%;"></i>
+    <i id="59" class="fa-solid fa-location-dot marker" style="top: 69%; left: 37%;"></i>
+    <i id="60" class="fa-solid fa-location-dot marker" style="top: 68%; left: 35%;"></i>
+    <!-- 60 -->
+    <i id="61" class="fa-solid fa-location-dot marker" style="top: 71%; left: 37.2%;"></i>
+    <i id="62" class="fa-solid fa-location-dot marker" style="top: 72%; left: 36.7%;"></i>
+    <i id="63" class="fa-solid fa-location-dot marker" style="top: 70%; left: 32%;"></i>
+    <i id="64" class="fa-solid fa-location-dot marker" style="top: 66.4%; left: 30%;"></i>
+    <i id="65" class="fa-solid fa-location-dot marker" style="top: 60.5%; left: 20.5%;"></i>
+    <i id="66" class="fa-solid fa-location-dot marker" style="top: 63%; left: 17%;"></i>
+    <i id="67" class="fa-solid fa-location-dot marker" style="top: 58.3%; left: 18.5%;"></i>
+    <i id="68" class="fa-solid fa-location-dot marker" style="top: 47.5%; left: 11.5%;"></i>
+    <i id="69" class="fa-solid fa-location-dot marker" style="top: 52%; left: 10%;"></i>
+    <i id="70" class="fa-solid fa-location-dot marker" style="top: 53%; left: 8.7%;"></i>
+    <!-- 70 -->
+    <i id="71" class="fa-solid fa-location-dot marker" style="top: 66%; left: 50.3%;"></i>
+    <i id="72" class="fa-solid fa-location-dot marker" style="top: 57%; left: 55%;"></i>
+    <i id="73" class="fa-solid fa-location-dot marker" style="top: 68.5%; left: 56.4%;"></i>
+    <i id="74" class="fa-solid fa-location-dot marker" style="top: 63%; left: 62.2%;"></i>
+    <i id="75" class="fa-solid fa-location-dot marker" style="top: 65%; left: 63.7%;"></i>
+    <i id="76" class="fa-solid fa-location-dot marker" style="top: 66%; left: 64.5%;"></i>
+    <i id="77" class="fa-solid fa-location-dot marker" style="top: 67%; left: 65%;"></i>
+    <i id="78" class="fa-solid fa-location-dot marker" style="top: 68%; left: 65.5%;"></i>
+    <i id="79" class="fa-solid fa-location-dot marker" style="top: 68.5%; left: 66.3%;"></i>
+    <i id="80" class="fa-solid fa-location-dot marker" style="top: 69%; left: 67%;"></i>
+    <!-- 80 -->
+    <i id="81" class="fa-solid fa-location-dot marker" style="top: 72.2%; left: 71.8%;"></i>
+    <i id="82" class="fa-solid fa-location-dot marker" style="top: 76%; left: 79.5%;"></i>
+    <i id="83" class="fa-solid fa-location-dot marker" style="top: 77%; left: 80.5%;"></i>
+    <i id="84" class="fa-solid fa-location-dot marker" style="top: 78%; left: 81.5%;"></i>
+    <i id="85" class="fa-solid fa-location-dot marker" style="top: 79.5%; left: 81.5%;"></i>
+    <i id="86" class="fa-solid fa-location-dot marker" style="top: 77%; left: 78.8%;"></i>
+    <i id="87" class="fa-solid fa-location-dot marker" style="top: 86%; left: 86.5%;"></i>
+    <i id="88" class="fa-solid fa-location-dot marker" style="top: 88.8%; left: 85.8%;"></i>
+    <i id="89" class="fa-solid fa-location-dot marker" style="top: 87%; left: 87.5%;"></i>
+    <i id="90" class="fa-solid fa-location-dot marker" style="top: 90%; left: 86.8%;"></i>
+    <!-- 90 -->
+    <i id="91" class="fa-solid fa-location-dot marker" style="top: 89%; left: 88.8%;"></i>
+    <i id="92" class="fa-solid fa-location-dot marker" style="top: 87.4%; left: 86.5%;"></i>    
+    <i id="93" class="fa-solid fa-location-dot marker" style="top: 78.5%; left: 78.8%;"></i>
+    <i id="94" class="fa-solid fa-location-dot marker" style="top: 83%; left: 76.5%;"></i>
+    <i id="95" class="fa-solid fa-location-dot marker" style="top: 83%; left: 82%;"></i>
+    <i id="96" class="fa-solid fa-location-dot marker" style="top: 85.5%; left: 76%;"></i>
+    <i id="97" class="fa-solid fa-location-dot marker" style="top: 90.5%; left: 73.3%;"></i>
+    <i id="98" class="fa-solid fa-location-dot marker" style="top: 78.5%; left: 66.3%;"></i>
+    <i id="99" class="fa-solid fa-location-dot marker" style="top: 82.8%; left: 62.5%;"></i>
+    <i id="100" class="fa-solid fa-location-dot marker" style="top: 76.2%; left: 77.5%;"></i>
+</div>
+
+<div class="lista">
+     <ul id="list"></ul>
+</div>
+
+
+<script src="app.js"></script>
+
+
+</body>
+<br>
+<footer>
+    <p>&copy Cristian Castro & Vanessa Rodriguez</p>
+</footer>
+</html>

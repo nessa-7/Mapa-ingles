@@ -1,0 +1,127 @@
+.imagen{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+}
+
+.map-container {
+    position: relative;
+    display: inline-block;
+    width: 55%;
+    left: 2%;
+}
+
+.map-container img {
+    max-width: 100%;
+    display: block;
+}
+
+.marker {
+    position: absolute;
+    font-size: 20px;
+    transform: translate(-50%, -50%);
+    color: transparent;
+}
+
+.marker:hover{
+    position: absolute;
+    color: red;
+    font-size: 20px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.lista{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    width: 37%;
+    height: 725px;
+    padding: 20px;
+    overflow: auto;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 50px;
+}
+
+li{
+    cursor: pointer;
+}
+
+li:hover{
+    color: #50e5f9;
+    font-size: 18px;
+    background-color: #002f4dc7;
+}
+
+header{
+    background: linear-gradient(to right, #00304D 60%, #002f4dd7);
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: black 3px solid;
+    color: white;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+#logito{
+    width: 40px;
+    margin-left: 10px;
+}
+
+.lista {
+    background: linear-gradient(270deg, #50e5f95d, #50e5f923, #50e5f941);
+    background-size: 800% 800%;
+    border: solid 1px black;
+    border-radius: 30px;
+    animation: moverGradiente 15s ease infinite;
+}
+
+@keyframes moverGradiente {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #50e5f9cb, #00304D);
+  border-radius: 10px;
+  transition: background 0.4s ease, transform 0.3s ease; /* 🔥 transición suave */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #00304D, #50e5f9cb);
+  transform: scaleX(1.2); /* opcional: agrandar un poco al pasar el mouse */
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, #00304D 60%, #002f4dd7);
+    width: 100%;
+    height: 45px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer p{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
