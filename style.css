@@ -1,12 +1,18 @@
+.contenedor{
+    display: flex;
+    align-items: stretch; 
+    max-height: calc(100vh - 90px);
+}
+
 .imagen{
     width: 100%;
-    height: auto;
+    height: 100%;
     background-color: transparent;
 }
 
 .map-container {
     position: relative;
-    display: inline-block;
+    display: block;
     width: 55%;
     left: 2%;
 }
@@ -32,15 +38,14 @@
 }
 
 .lista{
-    position: absolute;
-    top: 2%;
-    right: 2%;
+    position: relative;
+    right: -4%;
     width: 37%;
-    height: 725px;
+    max-height: calc(100vh - 90px);
     padding: 20px;
     overflow: auto;
     font-family: 'Courier New', Courier, monospace;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 li{
@@ -64,6 +69,7 @@ header{
     color: white;
     font-family: monospace;
     font-size: 20px;
+    margin-bottom: 10px;
 }
 
 #logito{
@@ -73,7 +79,7 @@ header{
 
 .lista {
     background: linear-gradient(270deg, #50e5f95d, #50e5f923, #50e5f941);
-    background-size: 800% 800%;
+    background-size: 725% 725%;
     border: solid 1px black;
     border-radius: 30px;
     animation: moverGradiente 15s ease infinite;
