@@ -35,9 +35,9 @@ function mostrarAlerta(id, name) {
   Swal.fire({
     title: name,
     text: `ID: ${id}`,
-    imageUrl: `./imagenes/${id}.jpeg`,
-    imageWidth: 200,
-    imageHeight: 200,
+    imageUrl: `./imagenes/${id}.jpg`,
+    imageWidth: 450,
+    imageHeight: 250,
     imageAlt: `Imagen ${name}`,
     confirmButtonText: "¡Entendido!"
   });

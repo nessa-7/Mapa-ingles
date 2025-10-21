@@ -77,6 +77,11 @@ header{
     margin-left: 10px;
 }
 
+#logocrisel{
+    width: 130px;
+    margin-left: 60%;
+}
+
 .lista {
     background: linear-gradient(270deg, #50e5f95d, #50e5f923, #50e5f941);
     background-size: 725% 725%;
