@@ -13,8 +13,10 @@
 .map-container {
     position: relative;
     display: block;
-    width: 55%;
+    width: 50%;
+    height: 30%;
     left: 2%;
+    margin-top: 20px;
 }
 
 .map-container img {
@@ -39,13 +41,14 @@
 
 .lista{
     position: relative;
-    right: -4%;
+    right: -6%;
     width: 37%;
-    max-height: calc(100vh - 90px);
+    max-height: calc(85vh - 70px);
     padding: 20px;
     overflow: auto;
     font-family: 'Courier New', Courier, monospace;
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
 
 li{
@@ -128,6 +131,7 @@ footer{
     justify-content: center;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 0px;
 }
 
 footer p{
@@ -135,4 +139,62 @@ footer p{
     justify-content: center;
     align-items: center;
     padding: 10px;
+}
+
+
+
+@media (max-width: 1024px) {
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+        overflow-y: auto;
+    }
+
+    .map-container {
+        width: 90%;
+        left: 0;
+        margin-bottom: 20px;
+    }
+
+    .lista {
+        position: relative;
+        width: 90%;
+        right: 0;
+        max-height: none;
+    }
+
+    header, footer {
+        flex-direction: column;
+        font-size: 16px;
+        text-align: center;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    #logocrisel {
+        margin-left: 0;
+        width: 100px;
+    }
+
+    #logito {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .marker {
+        font-size: 16px;
+    }
+
+    .marker:hover {
+        font-size: 16px;
+    }
+
+    li {
+        font-size: 14px;
+    }
+
+    li:hover {
+        font-size: 16px;
+    }
 }

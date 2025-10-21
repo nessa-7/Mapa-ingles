@@ -38,7 +38,7 @@ function mostrarAlerta(id, name) {
     imageWidth: 450,
     imageHeight: 250,
     imageAlt: `Imagen ${name}`,
-    confirmButtonText: "Continuar",
+    confirmButtonText: "Next",
     confirmButtonColor: "#6b2f69ff"
   });
 }
