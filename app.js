@@ -34,12 +34,12 @@ fetch("lista.json")
 function mostrarAlerta(id, name) {
   Swal.fire({
     title: name,
-    text: `ID: ${id}`,
     imageUrl: `./imagenes/${id}.jpg`,
     imageWidth: 450,
     imageHeight: 250,
     imageAlt: `Imagen ${name}`,
-    confirmButtonText: "¡Entendido!"
+    confirmButtonText: "Continuar",
+    confirmButtonColor: "#6b2f69ff"
   });
 }
 
